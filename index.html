@@ -11,15 +11,23 @@
     <div class="container">
       <h1>currency converter</h1>
       <form id="form">
-        <label for="from">From:</label>
-        <select id="from"></select>
-
-        <label for="to">To:</label>
-        <select id="to"></select>
-
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" placeholder="Enter amount" required />
-
+        <div class="form-group">
+          <label for="from">From:</label>
+          <select id="from"></select>
+        </div>
+        <div class="form-group">
+          <label for="to">To:</label>
+          <select id="to"></select>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+            required
+          />
+        </div>
         <button type="submit">Convert</button>
       </form>
       <div id="result"></div>
